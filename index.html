@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foldable Waterproof Backpack - Fashion.id</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-gray': '#4a4a4a',
+                        'light-gray': '#9a9a9a',
+                        'silver': '#c0c0c0',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #fafafa;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(74,74,74,0.7) 100%), 
+                        url('https://cdn.wshopon.com/image/9af9b9bc7f1b5795ea93dd479e280c3776e04af3-700.png');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hover-zoom {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-zoom:hover {
+            transform: scale(1.03);
+        }
+        
+        .social-proof {
+            animation: slideIn 0.5s ease-out, slideOut 0.5s ease-in 4.5s forwards;
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(192, 192, 192, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(192, 192, 192, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(192, 192, 192, 0); }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes slideOut {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .image-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            }
+        }
+        
+        /* OrderOnline Form Styling Overrides */
+        .orderonline-embed-form {
+            background: linear-gradient(135deg, rgba(255,255,255,0.92) 0%, rgba(245,245,245,0.92) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+        }
+        
+        .orderonline-embed-form input,
+        .orderonline-embed-form select,
+        .orderonline-embed-form textarea {
+            border-radius: 10px !important;
+            border: 1px solid #e2e8f0 !important;
+            padding: 12px 15px !important;
+            font-family: 'Roboto', sans-serif !important;
+            transition: all 0.3s ease;
+        }
+        
+        .orderonline-embed-form input:focus,
+        .orderonline-embed-form select:focus,
+        .orderonline-embed-form textarea:focus {
+            border-color: #c0c0c0 !important;
+            box-shadow: 0 0 0 3px rgba(192, 192, 192, 0.3) !important;
+            outline: none;
+        }
+        
+        .orderonline-embed-form button[type="submit"] {
+            background: linear-gradient(135deg, #000000 0%, #4a4a4a 100%) !important;
+            border-radius: 12px !important;
+            padding: 15px 20px !important;
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 600 !important;
+            font-size: 18px !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .orderonline-embed-form button[type="submit"]:hover {
+            transform: translateY(-3px) !important;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+        }
+        
+        .countdown-box {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(245,245,245,0.9) 100%);
+            backdrop-filter: blur(5px);
+            border-radius: 12px;
+            padding: 5px 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="text-dark-gray">
+    <!-- Social Proof Popup Container -->
+    <div id="socialProofContainer" class="fixed top-5 right-5 z-50 w-full max-w-xs"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block bg-gradient-to-r from-silver to-white px-4 py-2 rounded-full mb-6">
+                    <span class="text-black font-bold text-sm uppercase">Diskon Terbatas!</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Foldable Waterproof Backpack
+                </h1>
+                
+                <p class="text-xl text-silver mb-10 max-w-2xl mx-auto">
+                    Ransel Lipat Tahan Air Premium - Perlindungan Terbaik untuk Petualangan Anda
+                </p>
+                
+                <div class="flex flex-wrap justify-center items-center gap-4 mb-12">
+                    <div class="flex items-center">
+                        <i class="fas fa-shield-alt text-silver text-2xl mr-2"></i>
+                        <span class="text-white">Garansi 1 Tahun</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-truck text-silver text-2xl mr-2"></i>
+                        <span class="text-white">Gratis Ongkir</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-undo text-silver text-2xl mr-2"></i>
+                        <span class="text-white">30 Hari Retur</span>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#orderForm" class="bg-white text-black font-bold py-4 px-8 rounded-full text-lg hover:bg-silver hover:text-white transition-all transform hover:-translate-y-1 shadow-lg">
+                        Pesan Sekarang
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    
+                    <a href="#features" class="glass-effect text-white py-4 px-8 rounded-full text-lg hover:bg-white hover:text-black transition-all">
+                        <i class="fas fa-play-circle mr-2"></i> Lihat Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+            <a href="#features" class="text-white animate-bounce">
+                <i class="fas fa-chevron-down text-3xl"></i>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gradient-to-b from-white to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Solusi Sempurna untuk Petualangan Anda</h2>
+                <p class="text-lg text-light-gray">Didesain khusus untuk wanita aktif yang ingin tampil stylish sekaligus praktis dalam setiap perjalanan</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10 mb-20">
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 hover:border-t-4 hover:border-silver">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-tint-slash text-3xl text-silver"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">100% Tahan Air</h3>
+                    <p class="text-light-gray">Material nilon premium menjaga isi tas tetap kering bahkan dalam hujan deras sekalipun. Tidak perlu khawatir barang elektronik Anda rusak.</p>
+                </div>
+                
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 hover:border-t-4 hover:border-silver">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-feather-alt text-3xl text-silver"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Ultra Ringan</h3>
+                    <p class="text-light-gray">Dengan berat hanya 450g, tas ini tidak akan membebani perjalanan Anda. Dapat dilipat menjadi ukuran kecil yang muat di saku.</p>
+                </div>
+                
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 hover:border-t-4 hover:border-silver">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-suitcase-rolling text-3xl text-silver"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Kapasitas Luas</h3>
+                    <p class="text-light-gray">Kapasitas 25L yang dapat menampung semua kebutuhan perjalanan Anda. Dengan kompartemen khusus laptop hingga 15 inci.</p>
+                </div>
+            </div>
+            
+            <!-- Video Demo -->
+            <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl mb-20">
+                <div class="bg-black aspect-video flex items-center justify-center">
+                    <img src="https://cdn.fastcdnshop.com/image/f7373eb9b186b376f09c20155552f3c2cfec0979.gif" alt="Demo Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <!-- Gallery Section -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-bold text-center mb-10">Lihat Detail Keunggulan Produk Kami</h3>
+                
+                <div class="image-gallery">
+                    <!-- Gallery Images -->
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-1.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-3.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-4.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-5.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-6.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-7.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-8.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-9.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-10.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-11.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-22.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                    <div class="hover-zoom rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://img.tvcmall.com/dynamic/uploads/scenes/1000x1000_6301000193-23.webp" alt="Foldable Waterproof Backpack" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-100 to-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Dapatkan Perlindungan Terbaik dengan Harga Terjangkau</h2>
+                <p class="text-lg text-light-gray">Manfaatkan promo khusus untuk pembelian hari ini</p>
+            </div>
+            
+            <div class="flex flex-wrap items-center justify-center gap-10 mb-16">
+                <div class="bg-white rounded-2xl p-8 shadow-xl max-w-md w-full">
+                    <div class="flex justify-between items-start mb-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Foldable Waterproof Backpack</h3>
+                            <p class="text-light-gray">Kapasitas 25L - Warna Hitam</p>
+                        </div>
+                        
+                        <div class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            DISKON 50%
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-end mb-8">
+                        <div class="text-4xl font-bold">Rp 220.500</div>
+                        <div class="ml-4 text-light-gray line-through">Rp 441.000</div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="font-medium">Stok Tersedia</span>
+                            <span class="font-bold">18 pcs</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-red-500 h-2.5 rounded-full" style="width: 30%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-center bg-gray-100 p-4 rounded-xl mb-8">
+                        <i class="fas fa-stopwatch text-red-500 mr-2"></i>
+                        <span class="font-bold">Promo Berakhir Dalam:</span>
+                        <div id="countdown" class="flex gap-2 ml-4">
+                            <div class="countdown-box"><span id="hours">03</span>h</div>
+                            <div class="countdown-box"><span id="minutes">45</span>m</div>
+                            <div class="countdown-box"><span id="seconds">22</span>s</div>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Gratis masker perlindungan travel senilai Rp 50.000</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Garansi 1 tahun penggantian produk</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Gratis ongkir ke seluruh Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    <!-- Order Form Section -->
+    <section id="orderForm" class="py-24 bg-gradient-to-b from-white to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Pesan Sekarang Juga!</h2>
+                <p class="text-lg text-light-gray max-w-2xl mx-auto">Isi formulir pemesanan di bawah ini dan dapatkan produk premium dengan harga spesial hanya hari ini</p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto">
+                <!-- OrderOnline Embed Code -->
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="nava" data-product-slug="foldable-waterproof-backpack" data-product-id="6885f857921557a72b0833ea" id="oo-embed-form-foldable-waterproof-backpack-3975" data-origin="orderonline">
+                        <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                    </form>
+                </div>
+                <script>
+                    if (typeof xLogError != 'function') {
+                        var xLogError = function (error) {
+                            var req = new XMLHttpRequest();
+                            var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                            var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                            req.open('POST', 'https://api.orderonline.id/log', true);
+                            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            req.send(params);
+                        };
+                    }
+                    try {
+                        if (typeof xEmbedScript != 'function') {
+                            var xEmbedScript = function () {
+                                !function(w, d, e, v, id, t, s) {
+                                    if (d.getElementById(id)) return;
+                                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                    s = d.getElementsByTagName(e)[0];
+                                    s.parentNode.insertBefore(t, s);
+                                }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                            };
+                        }
+                        if (typeof xEmbedInit != 'function') {
+                            var xEmbedInit = function (w, n) {
+                                if (w.ooe) return;
+                                n = w.ooe = function() {
+                                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                };
+                                if (!w._ooe) w._ooe = n;
+                                n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                            };
+                        }
+                        xEmbedInit(window);
+                        ooe('setup', 'redirect', 'https://nava.orderonline.id');
+                        ooe('init', '5f119cd08dcbdb2737678706', '6885f857921557a72b0833ea', '6885f857921557a72b0833eb', 'oo-embed-form-foldable-waterproof-backpack-3975', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
+                        if (!window.jQuery) {
+                            !function(w, d, e, v, id, t, s) {
+                                if (d.getElementById(id)) return;
+                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                t.addEventListener('load', xEmbedScript);
+                                s = d.getElementsByTagName(e)[0];
+                                s.parentNode.insertBefore(t, s);
+                            }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                        } else {
+                            xEmbedScript();
+                        }
+                    } catch (e) {
+                        xLogError(e);
+                        throw e;
+                    }
+                </script>
+                <!-- End OrderOnline Embed Code -->
+            </div>
+        </div>
+    </section>
+    
+    
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const hoursElement = document.getElementById('hours');
+            const minutesElement = document.getElementById('minutes');
+            const secondsElement = document.getElementById('seconds');
+            
+            let hours = parseInt(hoursElement.textContent);
+            let minutes = parseInt(minutesElement.textContent);
+            let seconds = parseInt(secondsElement.textContent);
+            
+            if (seconds > 0) {
+                seconds--;
+            } else {
+                if (minutes > 0) {
+                    minutes--;
+                    seconds = 59;
+                } else {
+                    if (hours > 0) {
+                        hours--;
+                        minutes = 59;
+                        seconds = 59;
+                    } else {
+                        // Timer ended
+                        return;
+                    }
+                }
+            }
+            
+            hoursElement.textContent = hours.toString().padStart(2, '0');
+            minutesElement.textContent = minutes.toString().padStart(2, '0');
+            secondsElement.textContent = seconds.toString().padStart(2, '0');
+            
+            setTimeout(updateCountdown, 1000);
+        }
+        
+        // Social Proof Notification
+        const customerNames = ["Vina", "Dina", "Kartika", "Lestari", "Putri", "Maya Sari", "Rani", "Permata", "Lestari F"];
+        const customerCities = ["Jakarta", "Surabaya", "Bandung", "Medan", "Bekasi", "Tangerang", "Depok", "Semarang"];
+        
+        function generateSocialProof() {
+            const name = customerNames[Math.floor(Math.random() * customerNames.length)];
+            const city = customerCities[Math.floor(Math.random() * customerCities.length)];
+            const minutesAgo = Math.floor(Math.random() * 15) + 1;
+            
+            return {
+                name,
+                city,
+                minutesAgo
+            };
+        }
+        
+        function showSocialProof() {
+            const container = document.getElementById('socialProofContainer');
+            const proof = generateSocialProof();
+            
+            const notification = document.createElement('div');
+            notification.className = 'social-proof bg-white rounded-lg shadow-lg p-4 mb-4 flex items-start border-l-4 border-silver';
+            notification.innerHTML = `
+                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-10 h-10 flex items-center justify-center text-silver mr-3 flex-shrink-0">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div>
+                    <p class="font-medium">${proof.name} dari ${proof.city}</p>
+                    <p class="text-sm text-light-gray">Baru saja memesan Foldable Waterproof Backpack</p>
+                    <p class="text-xs text-silver">${proof.minutesAgo} menit yang lalu</p>
+                </div>
+            `;
+            
+            container.appendChild(notification);
+            
+            // Auto remove after animation
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+        
+        // Initialize after page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start countdown
+            updateCountdown();
+            
+            // Show first social proof after 5 seconds
+            setTimeout(showSocialProof, 5000);
+            
+            // Continue showing social proof every 10 seconds
+            setInterval(showSocialProof, 10000);
+        });
+    </script>
+</body>
+</html>
